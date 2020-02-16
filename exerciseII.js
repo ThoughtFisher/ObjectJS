@@ -19,14 +19,13 @@ var library = [
   }
 ]
 
-// Encontrar una propiedad del arreglo
-// para nuestro caso será el que tenga reading status TRUE
-
-for (var i = 0; i < library.length; i++) {
-  var book = "'" + library[i].title + "'" + ' by ' + library[i].author + '.'
-  if (library[i].readingStatus) {
-    console.log('Already read ' + book)
-  } else {
-    console.log('You still need to read ' + book)
-  }
-}
+/**
+ * Encontrar una propiedad del arreglo
+ * para nuestro caso será el que tenga reading status TRUE
+ *
+ * Ya hecho esto deberá avisar cuando el libro está leido y
+ * cuado el libro falte por leer
+ *
+ * HINT: Iterar el arreglo y preguntar por la propiedad
+ *       correcta
+ */
