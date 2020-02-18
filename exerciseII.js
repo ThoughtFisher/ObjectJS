@@ -3,19 +3,22 @@ var library = [
     author: 'Bill Gates',
     title: 'The Road Ahead',
     readingStatus: true,
-    popularity: 4
+    popularity: 4,
+    books: ['a Bill Gates', 'b Bill Gates', 'c Bill Gates']
   },
   {
     author: 'Steve Jobs',
     title: 'Walter Isaacson',
     readingStatus: true,
-    popularity: 2
+    popularity: 2,
+    books: ['a Steve Jobs', 'b Steve Jobs', 'c Steve Jobs']
   },
   {
     author: 'Suzanne Collins',
     title: 'Mockingjay: The Final Book of The Hunger Games',
     readingStatus: false,
-    popularity: 1
+    popularity: 1,
+    books: ['a Suzanne Collins', 'b Suzanne Collins', 'c Suzanne Collins']
   }
 ]
 
@@ -32,9 +35,4 @@ var library = [
 
 for (var i = 0; i < library.length; i++) {
   var book = "'" + library[i].title + "'" + ' by ' + library[i].author + '.'
-  if (library[i].readingStatus) {
-    console.log('Already read ' + book)
-  } else {
-    console.log('You still need to read ' + book)
-  }
 }
